@@ -14,10 +14,8 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        
-        /* padding-top: 22.3rem; */
-        /* padding-top: 18.85rem; */
         padding-top: 23.8rem;
+        padding-bottom: 17.1rem;
 
         .home__header{
             width: 100%;
@@ -27,8 +25,20 @@
             flex-wrap: wrap;
 
             .home__header-title{
-                /* width: 57.66%; */
-                border: 1px solid red;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                @include medium(){
+                    &.off{
+                        display: none;
+                    }
+                }
+                
+                @include min-medium(){
+                    width: 57.66%;
+                }
                 
                 .home__header-text{
                     font-size: 9.2rem;
@@ -37,13 +47,62 @@
                     color: $white-content;
                     font-family: $bold;
                     margin: 0;
+                    
+                    @include large(){
+                        font-size: 5.2rem;
+                        line-height: 6.0rem;
+                    }
+                    
+                    @include small(){
+                        font-size: 4.2rem;
+                        line-height: 4.8rem;
+                    }
+
+                }
+
+                .input__button{
+                    width: 44px;
+                    height: 44px;
+                    padding: 0;
+                    display: none;
+                    @include medium(){
+                        display: block;
+                    }
+
                 }
 
             }
 
             
-            .home__header-search{    
-                width: 32.38%;
+            .home__header-search{
+                width: 100%;
+                padding-top: 1.434rem;
+                display: block;
+                @include min-medium(){
+                    width: 32.38%;
+                }
+
+                @include medium(){
+                    display: none;
+                    &.active{
+                        display: block;
+                        background-color:$base-blue;
+                        .input-content{
+                            padding-left: 16px;
+                            padding-right: 16px;
+                        }
+
+                        .input-control{
+                            font-size: 26px;
+                            line-height: 31.03px;
+                            color: $white;
+                            font-family: $bold;
+                            &::placeholder{
+                                color: $white;
+                            }
+                        }
+                    }
+                }
 
                 .home__search-input{
                     width: 100%;
