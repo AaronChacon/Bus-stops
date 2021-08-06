@@ -112,7 +112,7 @@
         }
 
         .home__users{
-            
+
 
             .home__users-section{
                 margin-bottom: 4.0rem;
@@ -139,11 +139,17 @@
             } 
 
             .home__user-list{
+                width: 100%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
-                width: 100%;
+                margin-left: -0.98rem;
+                margin-right: -0.98rem;
+
+                @include small(){
+                    justify-content: center;
+                }
             }
 
         }
