@@ -1,0 +1,63 @@
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.modal__bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($primary, 0.95);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container{
+    width: 45.21%;
+    height: 325px;
+    background-color: $white-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4.0rem;
+
+    @include medium(){
+        width: 70%;
+    }
+
+    @include small(){
+        width: 95%;
+    }
+
+    .modal__close{
+        color: $base-gray;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        letter-spacing: 0.01rem;
+        margin-top: 0;
+        margin-bottom: 6.0rem;
+    }
+    
+    .modal__title{
+        font-family: 'SF Pro Display Bold';
+        text-align: center;
+        font-size: 2.8rem;
+        line-height: 3.341rem;
+        letter-spacing: 0.01rem;
+        color: $primary;
+        margin-top: 0;
+        margin-bottom: 4.6rem;
+    }
+
+    .modal__btn-container{
+        width: 30.7rem;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -2,6 +2,7 @@
     font-family: $normal;
     font-style: normal;
     font-weight: normal;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,6 +12,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box; */
 }
 
 a{
@@ -24,6 +26,6 @@ li {
 .container{
   width: 88.89%;
   @include small(){
-    width: 91.47%;
+    width: 93.07%;
   }
 }

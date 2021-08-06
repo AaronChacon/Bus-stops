@@ -5,7 +5,7 @@
 $screen-xxs: 295px;
 
 // X-small smartphones (landscape view)
-$screen-xs: 395px;
+$screen-xs: 375px;
 
 // Small smartphones (landscape view)
 $screen-sm: 576px;
@@ -34,7 +34,7 @@ $screen-xxl: 1380px;
 }
 
 // Breakpoints media queries
-// X-small devices 395 (mobile)
+// X-small devices 375 (mobile)
 @mixin x-small{
   @media (max-width: #{$screen-xs}){
     @content;

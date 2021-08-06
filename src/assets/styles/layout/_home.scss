@@ -16,6 +16,11 @@
         flex-direction: column;
 
         .home__header{
+            /* 
+            TODO: Animations
+            top: 0px;
+            position: sticky; */
+
             width: 100%;
             display: flex;
             align-items: flex-end; 
@@ -23,6 +28,10 @@
             flex-wrap: wrap;
             padding-top: 23.8rem;
             padding-bottom: 17.1rem;
+            background-color: $primary;
+
+            /* padding-top: 7.0rem;
+            padding-bottom: 4.2rem; */
 
             .home__header-title{
                 width: 100%;
@@ -144,12 +153,10 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
-                margin-left: -0.98rem;
-                margin-right: -0.98rem;
 
-                @include small(){
-                    justify-content: center;
-                }
+                /* @include small(){
+                    justify-content: space-between;
+                } */
             }
 
         }
