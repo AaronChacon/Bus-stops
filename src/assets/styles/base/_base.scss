@@ -1,12 +1,11 @@
 * {
-    background-color: red;
-    font-family: "SF Pro Display Bold";
+    font-family: $normal;
     font-style: normal;
     font-weight: normal;
 }
 
-.html {
-    font-size: 62.5% /* rem = 10px */
+html {
+    font-size: 62.5%; /* rem = 10px */
 }
 
 body {
@@ -16,4 +15,15 @@ body {
 
 a{
    text-decoration: none;
+}
+
+li {
+  list-style: none
+}
+
+.container{
+  width: 88.89%;
+  @include small(){
+    width: 91.47%;
+  }
 }

@@ -1,0 +1,123 @@
+.navbar{
+    background-color: $primary;
+    color: $white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .navbar__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3.45rem 0;
+        margin: 3.45rem 0;
+
+        @include small(){
+            padding: 3.3rem 0;
+            margin: 0;
+        }
+    }
+
+    .navbar__logo{
+        width: 10.4rem;
+        height: 3.0rem;
+        &:hover{
+            cursor: pointer;
+        }
+    } 
+    
+    .navbar__items-content{
+        width: 26.51%;
+        margin: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 2rem;
+
+        @include m-large(){
+            width: 30%;
+        }
+
+        @include large(){
+            width: 38%;
+        }
+        
+        @include medium(){
+            width: 45%;
+        }
+        
+        @include small(){
+            display: none;
+        }
+
+        .navbar__item{
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            letter-spacing: 0.1rem;
+            text-align: center;
+            &:hover{
+                color: darken( $white, 10%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .navbar__icon-open,
+    .navbar__icon-close {
+        width: 3.0rem;
+        height: 3.0rem;
+        display: none;
+        transition: .3s;
+        &:hover{
+            cursor: pointer;
+        }
+        &:active{
+            transform: scale(.92);
+        }
+
+        @include small(){
+            display: block;
+        }
+    }
+
+    .navbar__mobile{
+        top: 16.8rem;
+        position: fixed;
+        width: 100%;
+        min-height: calc(100vh - 9.6rem);
+        background-color: $primary;
+
+        display: none;
+        justify-content: center;
+        padding-top: 126px;
+        
+        @include small(){
+            top: 9.6rem;
+            display: flex;
+        }
+
+        .navbar__mobile-items{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary;
+            
+            .navbar-item-mobile{
+                font-size: 2.6rem;
+                line-height: 3.103rem;
+                margin: 0;
+
+                
+                &:nth-child(2){
+                    margin: 4.4rem 0;
+                }
+            }
+
+        }
+
+    }
+
+}

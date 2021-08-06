@@ -1,0 +1,33 @@
+.input-content{
+    display: flex;
+    padding-bottom: .747rem;
+    border-bottom: 0.1rem solid $light-gray;
+}
+
+.input-control{
+    border: 0;
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.909rem;
+    letter-spacing: 0.05rem;
+    color: $light-gray;
+    background-color: transparent;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder{
+        color: $light-gray
+    }
+}
+
+.input__button{
+    background-color: transparent;
+    border: none;
+    transition: .3s;
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        transform: scale(.92);
+    }
+}
