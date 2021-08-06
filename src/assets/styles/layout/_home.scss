@@ -11,11 +11,9 @@
 
     .home__container{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         flex-direction: column;
-        padding-top: 23.8rem;
-        padding-bottom: 17.1rem;
 
         .home__header{
             width: 100%;
@@ -23,6 +21,8 @@
             align-items: flex-end; 
             justify-content: space-between;
             flex-wrap: wrap;
+            padding-top: 23.8rem;
+            padding-bottom: 17.1rem;
 
             .home__header-title{
                 width: 100%;
@@ -107,6 +107,43 @@
                 .home__search-input{
                     width: 100%;
                 }
+            }
+
+        }
+
+        .home__users{
+            
+
+            .home__users-section{
+                margin-bottom: 4.0rem;
+                
+                .home__users-breadcrumb{
+                    font-size: 1.6rem;
+                    line-height:1.909rem;
+                    letter-spacing: 0.1rem;
+                    color: $base-gray;
+                    /* margin-bottom: 0.6rem; */
+                }
+
+                .home__users-title{
+                    font-size: 3.3rem;
+                    line-height: 3.938rem;
+                    letter-spacing: 0.1rem;
+                    color: $white-content;
+                    margin-top: 0.6rem;
+                    margin-bottom: 0;
+
+                }
+                
+
+            } 
+
+            .home__user-list{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
             }
 
         }
