@@ -18,7 +18,7 @@ export const Modal: FC<IModalProps> = ({setModalToggle}) => {
                         cerrar
                     </p>
                     <h1 className="modal__title">
-                        Hey, Nacho, 
+                        Hey Nacho,
                         <br /> 
                         ¿Cuál es tu rumbo, aluxioner?
                     </h1>

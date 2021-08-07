@@ -1,6 +1,9 @@
 .btn{
     cursor: pointer;
     transition: .3s;
+    background-color: transparent;
+    border: none;
+    
     &:hover{
         cursor: pointer;
     }

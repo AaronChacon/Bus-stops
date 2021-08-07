@@ -12,7 +12,7 @@
         padding: 3.45rem 0;
         margin: 3.45rem 0;
 
-        @include small(){
+        @include medium(){
             padding: 3.3rem 0;
             margin: 0;
         }
@@ -44,11 +44,9 @@
         
         @include medium(){
             width: 45%;
-        }
-        
-        @include small(){
             display: none;
         }
+    
 
         .navbar__item{
             font-size: 1.4rem;
@@ -59,24 +57,6 @@
                 color: darken( $white, 10%);
                 cursor: pointer;
             }
-        }
-    }
-
-    .navbar__icon-open,
-    .navbar__icon-close {
-        width: 3.0rem;
-        height: 3.0rem;
-        display: none;
-        transition: .3s;
-        &:hover{
-            cursor: pointer;
-        }
-        &:active{
-            transform: scale(.92);
-        }
-
-        @include small(){
-            display: block;
         }
     }
 
@@ -91,7 +71,7 @@
         justify-content: center;
         padding-top: 126px;
         
-        @include small(){
+        @include medium(){
             top: 9.6rem;
             display: flex;
         }
