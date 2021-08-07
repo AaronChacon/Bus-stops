@@ -9,7 +9,7 @@ import { CardStop } from '../components/CardStop';
 export const Results = () => {
 
     //form
-    const [toggle, setToggle] = useState(false);
+    const [,setToggle] = useState(false);
     
     const [mobileInput, setMobileInput] = useState(false);
     const [row, setRow] = useState(false);
