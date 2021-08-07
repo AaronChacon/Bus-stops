@@ -1,9 +1,11 @@
 .navbar{
-    background-color: $primary;
-    color: $white;
+    position: fixed;
+    z-index: 2;
     width: 100%;
+    color: $white;
     display: flex;
     justify-content: center;
+    background-color: $primary;
 
     .navbar__container{
         display: flex;
@@ -13,7 +15,7 @@
         margin: 3.45rem 0;
 
         @include medium(){
-            padding: 3.3rem 0;
+            padding: 4.0rem 0;
             margin: 0;
         }
     }

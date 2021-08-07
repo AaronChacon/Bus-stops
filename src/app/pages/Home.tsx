@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Modal } from '../components/Modal';
 import { Navbar } from '../components/Navbar';
 import { InputSearch } from '../components/ui/InputSearch';
 import { User } from '../components/User';
 
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+
+
 export const Home = () => {
+
+    let textInput:string = '¿Cuál es tu parada?'
 
     const [toggle, setToggle] = useState(false);
     const [modalOpen, setModalToggle] = useState(false);
@@ -30,7 +37,25 @@ export const Home = () => {
         { id: 18, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
     ]
 
-    let textInput:string = '¿Cuál es tu parada?'
+    let headerText = useRef(null)
+
+    console.log(headerText);
+    
+    useEffect(() => {
+        console.log(headerText);
+        
+    }, []);
+    
+
+    /* gsap.registerPlugin(ScrollTrigger);
+    let tl = gsap.timeline({
+        scrollTrigger: {
+
+        },
+
+    })
+
+    tl.to('') */
 
     return (
         <>
@@ -39,7 +64,11 @@ export const Home = () => {
                 <div className="home__container container">
                     <section className="home__header">
                         <div className={`home__header-title ${toggle ? 'off' : ''}`}>
-                            <h1 className="home__header-text">
+
+                            <h1 
+                                ref={headerText}
+                                className="home__header-text" 
+                            >
                                 Don’t be late, aluxioner
                             </h1>
             

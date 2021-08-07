@@ -16,10 +16,10 @@
         flex-direction: column;
 
         .home__header{
-            /* 
-            TODO: Animations
-            top: 0px;
-            position: sticky; */
+
+            top: 168px;
+            position: sticky;
+            padding: 4.2rem 0;
 
             width: 100%;
             min-height: 9.6rem;
@@ -27,12 +27,19 @@
             align-items: flex-end; 
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-top: 23.8rem;
-            margin-bottom: 17.1rem;
+            margin-top: 26.5rem;
+            margin-bottom: 12.9rem;
             background-color: $primary;
 
-            /* padding-top: 7.0rem;
-            padding-bottom: 4.2rem; */
+            @include medium(){
+                top: 110px;
+                padding-top: 1.22rem;
+                padding-bottom: 4.0rem;
+                margin-top: 26.1rem;
+                border-bottom: 0.05rem solid #42526E;
+            }
+
+
 
             .home__header-title{
                 width: 100%;
@@ -49,6 +56,10 @@
                 @include min-medium(){
                     width: 57.66%;
                 }
+
+                @include small(){
+                    align-items: center;
+                }
                 
                 .home__header-text{
                     font-size: 9.2rem;
@@ -64,8 +75,10 @@
                     }
                     
                     @include small(){
-                        font-size: 4.2rem;
-                        line-height: 4.8rem;
+                        /* font-size: 4.2rem;
+                        line-height: 4.8rem; */
+                        font-size: 2.6rem;
+                        line-height: 2.979rem;
                     }
 
                 }

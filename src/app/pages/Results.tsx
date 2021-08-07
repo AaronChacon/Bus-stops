@@ -154,7 +154,7 @@ export const Results = () => {
                 </div>
 
                 <div className="results__maps-content">
-                    sdssdas
+                    
                 </div>
 
             </div>

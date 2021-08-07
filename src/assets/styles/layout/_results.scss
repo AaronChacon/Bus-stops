@@ -23,6 +23,11 @@
         .results__stops-container{
             margin-top: 6.5rem;
             position: relative;
+            
+            @include medium(){
+                margin-top: 4.0rem;
+
+            }
 
             .results__stops-header{
                 display: flex;
@@ -170,6 +175,11 @@
                 height: calc(100vh - 36.6rem);
                 overflow: auto;
                 padding-right: 0.5rem;
+                
+                @include medium(){
+                    height: calc(100vh - 33.9rem);
+
+                }
                 
                 .results__data-section{
                     display: flex;
