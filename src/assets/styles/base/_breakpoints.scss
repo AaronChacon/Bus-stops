@@ -63,6 +63,13 @@ $screen-xxl: 1380px;
   }
 }
 
+// Medium - Large 767 between 992 ()
+@mixin medium-large{
+  @media (min-width: #{$screen-md}) and (max-width: #{$screen-lg}){
+    @content;   
+  }
+}
+
 // Large devices 992 (large tablet, small desktop)
 @mixin large{
   @media (max-width: #{$screen-lg}){
