@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom';
 import { useLockBodyScroll } from '../Hooks/useLockBodyScroll'
 
 interface IModalProps {
@@ -23,8 +24,12 @@ export const Modal: FC<IModalProps> = ({setModalToggle}) => {
                         ¿Cuál es tu rumbo, aluxioner?
                     </h1>
                     <div className="modal__btn-container">
-                        <button className="btn btn-primary" onClick={() => setModalToggle(false)} >casa</button>
-                        <button className="btn btn-primary" onClick={() => setModalToggle(false)} >aluxion</button>
+                        <Link to="/results">
+                            <button className="btn btn-primary" onClick={() => setModalToggle(false)} >casa</button>
+                        </Link>
+                        <Link to="/results">
+                            <button className="btn btn-primary" onClick={() => setModalToggle(false)} >aluxion</button>
+                        </Link>
                     </div>
                 </div>
             </div>
