@@ -4,8 +4,10 @@ import { Navbar } from '../components/Navbar';
 import { InputSearch } from '../components/ui/InputSearch';
 import { User } from '../components/User';
 
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+/* import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger'; */
+
+import { users } from '../mocks/user';
 
 
 
@@ -15,27 +17,6 @@ export const Home = () => {
 
     const [toggle, setToggle] = useState(false);
     const [modalOpen, setModalToggle] = useState(false);
-
-    const users = [
-        { id: 1, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 2, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 3, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 4, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 5, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 6, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 7, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 8, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 9, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 10, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 11, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 12, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 13, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 14, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 15, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 16, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 17, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-        { id: 18, name: 'Aaron Chacon', ocupation: 'Frontend Developer', img: ''},
-    ]
 
     let headerText = useRef(null)
     
