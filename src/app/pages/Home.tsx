@@ -4,8 +4,8 @@ import { Navbar } from '../components/Navbar';
 import { InputSearch } from '../components/ui/InputSearch';
 import { User } from '../components/User';
 
-/* import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger'; */
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 
 
@@ -38,24 +38,25 @@ export const Home = () => {
     ]
 
     let headerText = useRef(null)
-
-    console.log(headerText);
     
     useEffect(() => {
-        console.log(headerText);
+
+        /* gsap.registerPlugin(ScrollTrigger);
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.home__header',
+                markers: true,
+                start: '-200 0',
+                end: '+=470% 0',
+                scrub: 100,
+                toggleClass: {targets: '.home__header', className: "home__header--active"},
+            },
+    
+        }) */
         
     }, []);
     
 
-    /* gsap.registerPlugin(ScrollTrigger);
-    let tl = gsap.timeline({
-        scrollTrigger: {
-
-        },
-
-    })
-
-    tl.to('') */
 
     return (
         <>
@@ -67,6 +68,7 @@ export const Home = () => {
 
                             <h1 
                                 ref={headerText}
+                                id="title"
                                 className="home__header-text" 
                             >
                                 Don’t be late, aluxioner

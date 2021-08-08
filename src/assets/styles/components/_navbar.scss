@@ -19,10 +19,11 @@
             margin: 0;
         }
 
-        /* @media (orientation: landscape) {
+        @include ml-landscape {
             padding: 1.45rem 0;
             margin: 1.45rem 0;
-        } */
+        }
+        
     }
 
     .navbar__logo{

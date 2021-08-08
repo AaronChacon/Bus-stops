@@ -5,13 +5,6 @@ import { stops } from '../mocks/stops';
 
 
 export const CardStop:FC<ICardStopProps> = ({row}) => {
-
-    /* const [itemSelect, settemSelect] = useState(false); */
-
-    /* interface IStops: {
-        line: string;
-        items: { line: string, id: string, name: string, time: string, distance: string },
-    } */
     
 
     return (
@@ -19,7 +12,6 @@ export const CardStop:FC<ICardStopProps> = ({row}) => {
             {
                 stops &&
                 stops.map((stop:any, i: number) => {
-                    console.log(stop)
                     return (
                         <div key={`${stop.line + i}`} className="results__data-section">
                             <div className="results__data-subcontent">

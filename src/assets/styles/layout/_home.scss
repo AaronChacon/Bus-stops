@@ -16,11 +16,9 @@
         flex-direction: column;
 
         .home__header{
-
-            top: 166px;
-            position: sticky;
+            /* top: 166px;
+            position: sticky; */
             padding: 4.2rem 0;
-
             width: 100%;
             min-height: 9.6rem;
             display: flex;
@@ -30,6 +28,18 @@
             margin-top: 26.5rem;
             margin-bottom: 12.9rem;
             background-color: $primary;
+            
+            /* &.home__header--active{
+                padding-top: 0;
+                .home__header-title{
+                    .home__header-text{
+                        font-size: 52px;
+                        line-height: 59.57px;
+                    }
+
+                }
+            } */
+
 
             @include medium(){
                 top: 10.9rem;
@@ -40,22 +50,24 @@
                 
                 
             }
-            
-            /* @media (orientation: landscape) {
-                top: 8.6rem;
-                margin-top: 0.5rem;
-                margin-bottom: 0.5rem;
-                padding: 1.5rem 0;
-                min-height: 4.0rem;
-                
-            } */
 
-            /* .home__users{
+            @include ml-landscape {
+                /* top: 8.6rem; */
+                margin-top: 2.5rem;
+                margin-bottom: 5.5rem;
+                padding: 1.5rem 0;
+                min-height: 4.0rem;    
+            }
+            
+
+            .home__users{
                 margin-top: 0;
-                @media (orientation: landscape) {
-                    margin-top: 12.0rem;
+                
+                @include ml-landscape {
+                    margin-top: 12.0rem;    
                 }
-            } */
+
+            }
 
 
 
@@ -86,7 +98,7 @@
                     color: $white-content;
                     font-family: $bold;
                     margin: 0;
-                    
+
                     @include large(){
                         font-size: 5.2rem;
                         line-height: 6.0rem;
@@ -98,14 +110,12 @@
                         line-height: 2.979rem;
                     }
 
-                    /* @media (orientation: landscape) {
-
+                    @include ml-landscape {
+                        margin-top: 12.0rem;    
                         width: 60%;
                         font-size: 2.6rem;
                         line-height: 2.979rem;
-        
-                        
-                    } */
+                    }
 
                 }
 
@@ -193,6 +203,9 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
+
+                /* overflow: auto;
+                height: 955px; */
 
                 /* @include small(){
                     justify-content: space-between;

@@ -7,10 +7,10 @@
     justify-content: center;
     flex-wrap: wrap;
     background-color: $primary;
-
-    /* @media (orientation: landscape) {
-        height: calc(300vh);
-    } */
+    
+    @include ml-landscape {
+        height: calc(300vh);  
+    }
     
     .results__stops{
         width: 53%;
@@ -23,10 +23,10 @@
         @include medium(){
             width: 100%;
         }
-
-        /* @media (orientation: landscape) {
-            height: calc(300vh);
-        } */
+        
+        @include ml-landscape {
+            height: calc(300vh);   
+        }
         
         .results__stops-container{
             margin-top: 6.5rem;
@@ -188,9 +188,9 @@
                     height: calc(100vh - 33.9rem);
                 }
 
-                /* @media (orientation: landscape) {
+                @include ml-landscape {
                     height: calc(300vh - 390px );
-                } */
+                }
                 
                 .results__data-section{
                     display: flex;
@@ -466,9 +466,9 @@
         overflow: hidden;
         background-color: $white;
 
-        /* @media (orientation: landscape) {
+        @include ml-landscape {    
             height: calc(300vh);
-        } */
+        }
 
         @include medium(){
             width: 100%;
