@@ -4,8 +4,8 @@ import { Navbar } from '../components/Navbar';
 import { InputSearch } from '../components/ui/InputSearch';
 import { User } from '../components/User';
 
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+/* import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger'; */
 
 
 

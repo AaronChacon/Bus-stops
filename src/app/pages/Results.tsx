@@ -30,7 +30,9 @@ export const Results = () => {
                 <div className="results__stops-container container">
 
                     <div className="results__stops-header">
-                        <img className="results__header-logo" src={logo} alt="Logo" />
+                        <Link to="/">
+                            <img className="results__header-logo" src={logo} alt="Logo" />
+                        </Link>
                         
                         <div className="results__header-search">
                             <InputSearch

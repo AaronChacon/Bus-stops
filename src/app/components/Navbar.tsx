@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { FC, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import logo from '../../assets/img/aluxion-logo.svg';
 
@@ -25,11 +26,13 @@ export const Navbar:FC = () => {
     return (
         <nav className="navbar">
             <div className="navbar__container container">
-                <img className="navbar__logo" src={logo} alt="Logo" />
+                <Link to="/">
+                    <img className="navbar__logo" src={logo} alt="Logo" />
+                </Link>
                 <ul className="navbar__items-content">
-                    <li className="navbar__item btn">metro</li>
-                    <li className="navbar__item btn">cercanías</li>
-                    <li className="navbar__item btn" >carsharing</li>
+                    <Link to="/results" className="navbar__item btn">metro</Link>
+                    <Link to="/results" className="navbar__item btn">cercanías</Link>
+                    <Link to="/results" className="navbar__item btn" >carsharing</Link>
                 </ul>
 
                 {
@@ -52,11 +55,9 @@ export const Navbar:FC = () => {
                 toggle &&
                 (<div className="navbar__mobile">
                     <div className="navbar__mobile-items">
-
-                        <h3 className="navbar-item-mobile btn" onClick={ () => handleToggle(false) }>metro</h3>
-                        <h3 className="navbar-item-mobile btn" onClick={ () => handleToggle(false) }>cercanías</h3>
-                        <h3 className="navbar-item-mobile btn" onClick={ () => handleToggle(false) }>carsharing</h3>
-
+                        <Link to="/results" className="navbar-item-mobile btn" onClick={ () => handleToggle(false) }>metro</Link>
+                        <Link to="/results" className="navbar-item-mobile btn" onClick={ () => handleToggle(false) }>cercanías</Link>
+                        <Link to="/results" className="navbar-item-mobile btn" onClick={ () => handleToggle(false) }>carsharing</Link>
                     </div>
                 </div>)
             }

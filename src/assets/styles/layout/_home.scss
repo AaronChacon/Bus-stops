@@ -17,7 +17,7 @@
 
         .home__header{
 
-            top: 168px;
+            top: 166px;
             position: sticky;
             padding: 4.2rem 0;
 
@@ -32,12 +32,30 @@
             background-color: $primary;
 
             @include medium(){
-                top: 110px;
+                top: 10.9rem;
                 padding-top: 1.22rem;
                 padding-bottom: 4.0rem;
                 margin-top: 26.1rem;
                 border-bottom: 0.05rem solid #42526E;
+                
+                
             }
+            
+            /* @media (orientation: landscape) {
+                top: 8.6rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                padding: 1.5rem 0;
+                min-height: 4.0rem;
+                
+            } */
+
+            /* .home__users{
+                margin-top: 0;
+                @media (orientation: landscape) {
+                    margin-top: 12.0rem;
+                }
+            } */
 
 
 
@@ -75,11 +93,19 @@
                     }
                     
                     @include small(){
-                        /* font-size: 4.2rem;
-                        line-height: 4.8rem; */
+                        width: 60%;
                         font-size: 2.6rem;
                         line-height: 2.979rem;
                     }
+
+                    /* @media (orientation: landscape) {
+
+                        width: 60%;
+                        font-size: 2.6rem;
+                        line-height: 2.979rem;
+        
+                        
+                    } */
 
                 }
 
